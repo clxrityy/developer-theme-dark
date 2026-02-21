@@ -75,6 +75,11 @@
                 "label": "Developers Theme - Silver Dark",
                 "uiTheme": "vs-dark",
                 "path": "./themes/Silver Dark.json"
+            },
+            {
+                "label": "Developers Theme - dark alt",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Developers Theme dark alt.json"
             }
         ],
         "productIconThemes": [
