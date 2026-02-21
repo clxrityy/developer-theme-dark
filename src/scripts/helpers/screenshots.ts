@@ -9,8 +9,14 @@ import puppeteer from 'puppeteer';
 export const createScreenshot = async (filePath: string, fileName: string) => {
   try {
     const htmlFilePath = path.join('file:', filePath);
-    const browser = await puppeteer.launch();
+
+    const browser = await puppeteer.launch({
+      args: ['--no-sandbox', '--disable-setuid-sandbox'],
+      headless: 'new'
+    });
+
     const page = await browser.newPage();
+
     await page.setViewport({
       height: 10,
       width: 1000,
